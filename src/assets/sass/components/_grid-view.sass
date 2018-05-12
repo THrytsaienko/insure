@@ -1,0 +1,104 @@
+.grid-view
+	display: flex
+	flex-wrap: wrap
+	align-content: stretch
+	align-items: stretch
+	.item
+		border: 1px solid rgba(28, 27, 26, 0.07)
+		margin-top: 40px
+		flex-basis: 23%
+		flex-grow: 1
+		@media #{$desktop}
+			margin-right: 15px
+			margin-left: 15px
+			flex-basis: 45%
+		@media #{$tablet-land}
+			margin-right: 15px
+			margin-left: 15px
+			flex-basis: 45%
+		@media #{$tablet-port}
+			margin-right: 0
+			flex-basis: 100%
+		&:not(:nth-child(4n+4))
+			margin-right: 24px
+			@media #{$desktop}
+				margin-right: 15px
+				margin-left: 15px
+			@media #{$tablet-land}
+				margin-right: 15px
+				margin-left: 15px
+			@media #{$tablet-port}
+				margin-right: 15px
+				margin-left: 15px
+		&__content
+			padding: 30px 30px 0 30px
+		&__logo
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			margin-right: 20px
+		&__company
+			display: flex
+			align-items: center
+		&__overview
+			padding: 8px 22px 8px 23px
+			color: $primary-blue
+			background: #fff
+			border: 1px solid $light-gray
+			flex-grow: 1
+		&__buy
+			padding: 8px 26px
+			background: $primary-blue
+			border: 1px solid $primary-blue
+			color: $light-blue
+			flex-grow: 1
+		&__icon_colored
+			width: 12px
+			height: 12px
+			fill: $primary-yellow
+		&__icon_colorless
+			width: 12px
+			height: 12px
+			fill: $light-gray
+		&__ask-mark
+			padding: 1px 6px 1px 5px
+			background: $light-blue
+			color: $primary-blue
+			border-radius: 50%
+			font-size: $s-size
+		&__circle
+			padding: 1px 6px 1px 5px
+			border-radius: 50%
+		&__circle_p
+			background: $platinum
+			color: $platinum
+		&__circle_s
+			background: $silver
+			color: $silver
+		&__circle_g
+			background: $gold
+			color: $gold
+		&__circle_b
+			background: $bronze
+			color: $bronze
+		&__circle_c
+			background: $catastrophic
+			color: $catastrophic
+		&__buttons
+			line-height: 14px
+			display: flex
+		&__row
+			display: flex
+			justify-content: space-between
+			padding-top: 10px
+			padding-bottom: 10px
+			border-bottom: 1px solid $light-gray
+		&__row-name
+			color: $gray-not-active
+		&__price
+			padding-top: 30px
+			padding-bottom: 70px
+			text-align: center
+			font-size: 36px
+		&__title
+			font-size: 20px

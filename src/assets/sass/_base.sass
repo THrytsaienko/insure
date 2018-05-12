@@ -1,0 +1,66 @@
+// Font size
+$xs-size: 10px
+$s-size: 12px
+$m-size: 14px
+$lg-size: 24px
+
+// Colors
+$primary-blue: #2985f7
+$light-gray: #e8e8e8
+$dark-blue: #bdd9fd
+$light-blue: #e4f0ff
+$primary-yellow: #ffc000
+$gray-not-active: #a4a4a3
+$platinum: #808080
+$silver: #98B1B5
+$gold: #E79124
+$bronze: #963C11
+$catastrophic: #CA1D25
+
+$phoneWidth: 320px
+$tablet-portWidth: 480px
+$tablet-landWidth: 768px
+$desktopWidth: 1024px
+
+$phone: "only screen and (max-width: " + $phoneWidth + ")"
+$tablet-port: "only screen and (min-width: " + ($phoneWidth + 1) + ") and (max-width: " + $tablet-portWidth + ")"
+$tablet-land: "only screen and (min-width: " + ($tablet-portWidth + 1) + ") and (max-width: " + $tablet-landWidth + ")"
+$desktop: "only screen and (min-width: " + ($tablet-landWidth + 1) + ") and (max-width: " + $desktopWidth + ")"
+
+
+
+*,
+*::before,
+*::after
+	margin: 0
+	padding: 0
+	box-sizing: inherit
+
+
+html
+	box-sizing: border-box
+
+body
+	font-family: Open Sans
+	font-weight: 400
+	line-height: 1.6
+	background-size: cover
+	background-repeat: no-repeat
+	min-height: 100vh
+
+li
+	list-style: none
+
+a
+	text-decoration: none
+
+.main-container 
+	width: 100%
+	margin: 0 auto
+
+
+.inner-container
+	width: 100%
+	max-width: 1240px
+	margin: 0 auto
+	padding: 0 20px

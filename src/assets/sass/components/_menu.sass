@@ -1,0 +1,15 @@
+.menu
+	display: flex
+	@media #{$tablet-land}
+		display: none
+	@media #{$tablet-port}
+		display: none
+	&__list
+		display: flex
+	&__link
+		margin-left: 40px
+		color: $gray-not-active
+		padding-bottom: 25px
+		&.active
+			color: #000
+			border-bottom: 2px solid $primary-blue

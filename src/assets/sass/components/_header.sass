@@ -1,0 +1,21 @@
+.header
+	border-bottom: 1px solid rgba(28, 27, 26, 0.07)
+
+.header
+	display: flex
+	font-size: $m-size
+	line-height: 19px
+	justify-content: space-between
+	padding: 24px 0
+	width: 100%
+	max-width: 795px
+	&__icon
+		width: 21px
+		height: 21px
+		display: none
+		@media #{$tablet-land}
+			display: block
+		@media #{$tablet-port}
+			display: block
+		@media #{$phone}
+			display: block
